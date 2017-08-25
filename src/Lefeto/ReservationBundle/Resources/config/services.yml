@@ -1,0 +1,4 @@
+services:
+#    reservation.example:
+#        class: Lefeto\ReservationBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

@@ -1,0 +1,11 @@
+reservation_test:
+    resource: "@ReservationBundle/Controller/TestController.php"
+    type:     annotation
+
+reservation:
+    resource: "@ReservationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
