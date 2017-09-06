@@ -6,22 +6,37 @@
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link rel="stylesheet" href="{{ asset('front-end/plugins/iCheck/all.css') }}">
-
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{ asset('frontend/css/font-awesome.min.css') }}">
         <link  rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}">
         <link  rel="stylesheet" href="{{ asset('frontend/css/bootstrap-datetimepicker.min.css') }} ">
         <link  rel="stylesheet" href="{{ asset('frontend/css/flexslider.css') }}">
         <link  rel="stylesheet" href="{{ asset('frontend/css/templatemo-style.css') }}">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+        <!-- Mes styles obaju -->
+        <link href="{{ asset('frontend/css/font-awesome.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('frontend/css/animate.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('frontend/css/owl.carousel.css') }}" rel="stylesheet">
+        <link href="{{ asset('frontend/css/owl.theme.css') }}" rel="stylesheet">
+
+        <!-- theme stylesheet -->
+        <link href="{{ asset('frontend/css/style.default.css') }}" rel="stylesheet" id="theme-stylesheet">
+
+        <!-- your stylesheet with modifications -->
+        <link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet">
+
+
+
+
     </head>
     <body class="tm-gray-bg">
         <div class="tm-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+                    <div class="col-lg-2 col-md-4 col-sm-4 tm-site-name-container">
                         <a href="#" class="tm-site-name">Holiday</a>
                     </div>
-                    <div class="col-lg-6 col-md-8 col-sm-9">
+                    <div class="col-lg-6 col-md-4 col-sm-4">
                         <div class="mobile-menu-icon">
                             <i class="fa fa-bars"></i>
                         </div>
@@ -33,6 +48,37 @@
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="navbar-buttons">
+
+                            <div class="navbar-collapse collapse right" id="basket-overview">
+                                <a href="basket.html" class="btn btn-primary navbar-btn">
+                                    <i class="glyphicon glyphicon-shopping-cart"></i>
+                                    <span class="hidden-sm">3 items in cart</span></a>
+
+                            </div>
+                            <!--/.nav-collapse -->
+
+                            <div class="navbar-collapse collapse right" id="search-not-mobile">
+                                <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
+                                    <span class="sr-only">Toggle search</span>
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="collapse clearfix" id="search">
+                            <form class="navbar-form" role="search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fa fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,7 +118,7 @@
         <!-- gray bg -->
         <section class="container tm-home-section-1" id="more">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <!-- Nav tabs -->
                     <div class="tm-home-box-1">
                         <ul class="nav nav-tabs tm-white-bg" role="tablist" id="hotelCarTabs">
@@ -179,8 +225,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
                         <img src="{{ asset('frontend/img/index-01.jpg') }}" alt="image" class="img-responsive">
                         <a href="#">
@@ -191,7 +236,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">
                         <img src="{{ asset('frontend/img/index-02.jpg') }}" alt="image" class="img-responsive">
                         <a href="#">
@@ -202,17 +247,17 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">
-                        <img src="{{ asset('frontend/img/index-02.jpg') }}" alt="image" class="img-responsive">
-                        <a href="#">
-                            <div class="tm-red-gradient-bg tm-city-price-container">
-                                <span>Paris</span>
-                                <span>$4,200</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                {#<div class="col-lg-3 col-md-3 col-sm-6">#}
+                    {#<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">#}
+                        {#<img src="{{ asset('frontend/img/index-02.jpg') }}" alt="image" class="img-responsive">#}
+                        {#<a href="#">#}
+                            {#<div class="tm-red-gradient-bg tm-city-price-container">#}
+                                {#<span>Paris</span>#}
+                                {#<span>$4,200</span>#}
+                            {#</div>#}
+                        {#</a>#}
+                    {#</div>#}
+                {#</div>#}
             </div>
 
 
@@ -237,6 +282,14 @@
     <script src="{{ asset('frontend/js/bootstrap-datetimepicker.min.js') }}"></script>	<!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
     <script src="{{ asset('frontend/js/jquery.flexslider-min.js') }}"></script>
     <script src="{{ asset('frontend/js/templatemo-script.js') }}"></script>
+
+    <script src="{{ asset('frontend/js/respond.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.cookie.js') }}"></script>
+    <script src="{{ asset('frontend/js/waypoints.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/modernizr.js') }}"></script>
+    <script src="{{ asset('frontend/js/bootstrap-hover-dropdown.js') }}"></script>
+    <script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/front.js') }}"></script>
 
     <script>
 

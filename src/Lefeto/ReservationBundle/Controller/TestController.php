@@ -26,9 +26,8 @@ class TestController extends Controller
 
         $tests = $em->getRepository('ReservationBundle:Test')->findAll();
 
-        return $this->render('test/index.html.twig', array(
-            'tests' => $tests,
-        ));
+        return $this->render(':Offres:offres.html.twig'
+        );
     }
 
     /**
