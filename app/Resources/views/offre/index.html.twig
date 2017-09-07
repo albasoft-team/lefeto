@@ -1,6 +1,44 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    {#<h1>Offres list</h1>#}
+    {#<table>#}
+        {#<thead>#}
+            {#<tr>#}
+                {#<th>Id</th>#}
+                {#<th>Libelleoffre</th>#}
+                {#<th>Prixunitaireoffre</th>#}
+                {#<th>Quantiteoffre</th>#}
+                {#<th>Actions</th>#}
+            {#</tr>#}
+        {#</thead>#}
+        {#<tbody>#}
+        {#{% for offre in offres %}#}
+            {#<tr>#}
+                {#<td><a href="{{ path('offre_show', { 'id': offre.id }) }}">{{ offre.id }}</a></td>#}
+                {#<td>{{ offre.libelleOffre }}</td>#}
+                {#<td>{{ offre.prixUnitaireOffre }}</td>#}
+                {#<td>{{ offre.quantiteOffre }}</td>#}
+                {#<td>#}
+                    {#<ul>#}
+                        {#<li>#}
+                            {#<a href="{{ path('offre_show', { 'id': offre.id }) }}">show</a>#}
+                        {#</li>#}
+                        {#<li>#}
+                            {#<a href="{{ path('offre_edit', { 'id': offre.id }) }}">edit</a>#}
+                        {#</li>#}
+                    {#</ul>#}
+                {#</td>#}
+            {#</tr>#}
+        {#{% endfor %}#}
+        {#</tbody>#}
+    {#</table>#}
+
+    {#<ul>#}
+        {#<li>#}
+            {#<a href="{{ path('offre_new') }}">Create a new offre</a>#}
+        {#</li>#}
+    {#</ul>#}
     <div id="all">
         <div id="content">
             <div id="hot">
@@ -336,4 +374,3 @@
         </div>
     </div>
 {% endblock %}
-

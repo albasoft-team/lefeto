@@ -14,7 +14,7 @@
         <link  rel="stylesheet" href="{{ asset('frontend/css/templatemo-style.css') }}">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
         <!-- Mes styles obaju -->
-        <link href="{{ asset('frontend/css/font-awesome.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('frontend/css/font-awesome.css') }}" rel="stylesheet">
         <link href="{{ asset('frontend/css/animate.min.css') }}" rel="stylesheet">
         <link href="{{ asset('frontend/css/owl.carousel.css') }}" rel="stylesheet">
         <link href="{{ asset('frontend/css/owl.theme.css') }}" rel="stylesheet">
@@ -30,58 +30,342 @@
 
     </head>
     <body class="tm-gray-bg">
-        <div class="tm-header">
+        {#<div class="tm-header">#}
+            {#<div class="container">#}
+                {#<div class="row">#}
+                    {#<div class="col-lg-2 col-md-4 col-sm-4 tm-site-name-container">#}
+                        {#<a href="#" class="tm-site-name">Holiday</a>#}
+                    {#</div>#}
+                    {#<div class="col-lg-6 col-md-4 col-sm-4">#}
+                        {#<div class="mobile-menu-icon">#}
+                            {#<i class="fa fa-bars"></i>#}
+                        {#</div>#}
+                        {#<nav class="tm-nav">#}
+                            {#<ul>#}
+                                {#<li><a href="index.html" class="active">Home</a></li>#}
+                                {#<li><a href="about.html">About</a></li>#}
+                                {#<li><a href="tours.html">Our Tours</a></li>#}
+                                {#<li><a href="contact.html">Contact</a></li>#}
+                            {#</ul>#}
+                        {#</nav>#}
+                    {#</div>#}
+                    {#<div class="col-lg-4 col-md-4 col-sm-4">#}
+                        {#<div class="navbar-buttons">#}
+
+                            {#<div class="navbar-collapse collapse right" id="basket-overview">#}
+                                {#<a href="basket.html" class="btn btn-primary navbar-btn">#}
+                                    {#<i class="glyphicon glyphicon-shopping-cart"></i>#}
+                                    {#<span class="hidden-sm">3 items in cart</span></a>#}
+
+                            {#</div>#}
+                            {#<!--/.nav-collapse -->#}
+
+                            {#<div class="navbar-collapse collapse right" id="search-not-mobile">#}
+                                {#<button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">#}
+                                    {#<span class="sr-only">Toggle search</span>#}
+                                    {#<i class="glyphicon glyphicon-search"></i>#}
+                                {#</button>#}
+                            {#</div>#}
+
+                        {#</div>#}
+                        {#<div class="collapse clearfix" id="search">#}
+                            {#<form class="navbar-form" role="search">#}
+                                {#<div class="input-group">#}
+                                    {#<input type="text" class="form-control" placeholder="Search">#}
+                                    {#<span class="input-group-btn">#}
+                                    {#<button type="submit" class="btn btn-primary">#}
+                                        {#<i class="fa fa-search"></i></button>#}
+                                    {#</span>#}
+                                {#</div>#}
+                            {#</form>#}
+                        {#</div>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+        <div id="top">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-4 tm-site-name-container">
-                        <a href="#" class="tm-site-name">Holiday</a>
-                    </div>
-                    <div class="col-lg-6 col-md-4 col-sm-4">
-                        <div class="mobile-menu-icon">
-                            <i class="fa fa-bars"></i>
+                <div class="col-md-6 offer" data-animate="fadeInDown">
+                    <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">Get flat 35% off on orders over $50!</a>
+                </div>
+                <div class="col-md-6" data-animate="fadeInDown">
+                    <ul class="menu">
+                        <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                        </li>
+                        <li><a href="register.html">Register</a>
+                        </li>
+                        <li><a href="contact.html">Contact</a>
+                        </li>
+                        <li><a href="#">Recently viewed</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="Login">Customer login</h4>
                         </div>
-                        <nav class="tm-nav">
-                            <ul>
-                                <li><a href="index.html" class="active">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="tours.html">Our Tours</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="navbar-buttons">
-
-                            <div class="navbar-collapse collapse right" id="basket-overview">
-                                <a href="basket.html" class="btn btn-primary navbar-btn">
-                                    <i class="glyphicon glyphicon-shopping-cart"></i>
-                                    <span class="hidden-sm">3 items in cart</span></a>
-
-                            </div>
-                            <!--/.nav-collapse -->
-
-                            <div class="navbar-collapse collapse right" id="search-not-mobile">
-                                <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
-                                    <span class="sr-only">Toggle search</span>
-                                    <i class="glyphicon glyphicon-search"></i>
-                                </button>
-                            </div>
-
-                        </div>
-                        <div class="collapse clearfix" id="search">
-                            <form class="navbar-form" role="search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search">
-                                    <span class="input-group-btn">
-                                    <button type="submit" class="btn btn-primary">
-                                        <i class="fa fa-search"></i></button>
-                                    </span>
+                        <div class="modal-body">
+                            <form action="customer-orders.html" method="post">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="email-modal" placeholder="email">
                                 </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password-modal" placeholder="password">
+                                </div>
+
+                                <p class="text-center">
+                                    <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                                </p>
+
                             </form>
+
+                            <p class="text-center text-muted">Not registered yet?</p>
+                            <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <a class="navbar-brand home" href="index.html" data-animate-hover="bounce">
+                        <img src="{{ asset('frontend/img/img/logo.png') }}" alt="Obaju logo" class="hidden-xs">
+                        <img src="{{ asset('frontend/img/img/logo-small.png') }}" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
+                    </a>
+                    {#<div class="navbar-buttons">#}
+                        {#<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">#}
+                            {#<span class="sr-only">Toggle navigation</span>#}
+                            {#<i class="fa fa-align-justify"></i>#}
+                        {#</button>#}
+                        {#<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#search">#}
+                            {#<span class="sr-only">Toggle search</span>#}
+                            {#<i class="fa fa-search"></i>#}
+                        {#</button>#}
+                        {#<a class="btn btn-default navbar-toggle" href="basket.html">#}
+                            {#<i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">3 items in cart</span>#}
+                        {#</a>#}
+                    {#</div>#}
+                </div>
+                <!--/.navbar-header -->
+
+                <div class="navbar-collapse collapse" id="navigation">
+
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active"><a href="index.html">Acceuil</a>
+                        </li>
+                        <li class="dropdown yamm-fw">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Nos Résidences <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="yamm-content">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <h5>Nos résidences</h5>
+                                                <ul>
+                                                    <li><a href="category.html">Le feto 1</a>
+                                                    </li>
+                                                    <li><a href="category.html">Le feto 2</a>
+                                                    </li>
+                                                    <li><a href="category.html">Le feto 3</a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <h5>Nos Offres</h5>
+                                                <ul>
+                                                    <h3>Chambres</h3>
+                                                    <li><a href="category.html">Standard</a>
+                                                    </li>
+                                                    <li><a href="category.html">Luxes</a>
+                                                    </li>
+                                                    <h3>Suites</h3>
+                                                    <li><a href="category.html">Standard</a>
+                                                    </li>
+                                                    <li><a href="category.html">Luxes</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="banner">
+                                                    <a href="#">
+                                                        <img src="{{ asset('frontend/img/img/banner.jpg') }}" class="img img-responsive" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="banner">
+                                                    <a href="#">
+                                                        <img src="{{ asset('frontend/img/banner-2.jpg') }}" class="img img-responsive" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.yamm-content -->
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown yamm-fw">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Le Restaurant <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="yamm-content">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <h5>Une description</h5>
+                                                <ul>
+                                                    <li><a href="category.html">T-shirts</a>
+                                                    </li>
+                                                    <li><a href="category.html">Shirts</a>
+                                                    </li>
+                                                    <li><a href="category.html">Pants</a>
+                                                    </li>
+                                                    <li><a href="category.html">Accessories</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="banner">
+                                                    <a href="#">
+                                                        <img src="{{ asset('frontend/img/banner-1.jpg') }}" class="img img-responsive" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="banner">
+                                                    <a href="#">
+                                                        <img src="{{ asset('frontend/img/banner-2.jpg') }}" class="img img-responsive" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.yamm-content -->
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown yamm-fw">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Template <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="yamm-content">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <h5>Shop</h5>
+                                                <ul>
+                                                    <li><a href="index.html">Homepage</a>
+                                                    </li>
+                                                    <li><a href="category.html">Category - sidebar left</a>
+                                                    </li>
+                                                    <li><a href="category-right.html">Category - sidebar right</a>
+                                                    </li>
+                                                    <li><a href="category-full.html">Category - full width</a>
+                                                    </li>
+                                                    <li><a href="detail.html">Product detail</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5>User</h5>
+                                                <ul>
+                                                    <li><a href="register.html">Register / login</a>
+                                                    </li>
+                                                    <li><a href="customer-orders.html">Orders history</a>
+                                                    </li>
+                                                    <li><a href="customer-order.html">Order history detail</a>
+                                                    </li>
+                                                    <li><a href="customer-wishlist.html">Wishlist</a>
+                                                    </li>
+                                                    <li><a href="customer-account.html">Customer account / change password</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5>Order process</h5>
+                                                <ul>
+                                                    <li><a href="basket.html">Shopping cart</a>
+                                                    </li>
+                                                    <li><a href="checkout1.html">Checkout - step 1</a>
+                                                    </li>
+                                                    <li><a href="checkout2.html">Checkout - step 2</a>
+                                                    </li>
+                                                    <li><a href="checkout3.html">Checkout - step 3</a>
+                                                    </li>
+                                                    <li><a href="checkout4.html">Checkout - step 4</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5>Pages and blog</h5>
+                                                <ul>
+                                                    <li><a href="blog.html">Blog listing</a>
+                                                    </li>
+                                                    <li><a href="post.html">Blog Post</a>
+                                                    </li>
+                                                    <li><a href="faq.html">FAQ</a>
+                                                    </li>
+                                                    <li><a href="text.html">Text page</a>
+                                                    </li>
+                                                    <li><a href="text-right.html">Text page - right sidebar</a>
+                                                    </li>
+                                                    <li><a href="404.html">404 page</a>
+                                                    </li>
+                                                    <li><a href="contact.html">Contact</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.yamm-content -->
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--/.nav-collapse -->
+
+                <div class="navbar-buttons">
+
+                    <div class="navbar-collapse collapse right" id="basket-overview">
+                        <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
+                    </div>
+                    <!--/.nav-collapse -->
+
+                    <div class="navbar-collapse collapse right" id="search-not-mobile">
+                        <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
+                            <span class="sr-only">Toggle search</span>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="collapse clearfix" id="search">
+
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+
+			<button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+
+		    </span>
+                        </div>
+                    </form>
+
+                </div>
+                <!--/.nav-collapse -->
+
+            </div>
+            <!-- /.container -->
         </div>
         <section class="tm-banner">
             <!-- Flexslider -->
@@ -124,9 +408,6 @@
                         <ul class="nav nav-tabs tm-white-bg" role="tablist" id="hotelCarTabs">
                             <li role="presentation" class="active">
                                 <a href="#hotel" aria-controls="hotel" role="tab" data-toggle="tab">Hotel</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#car" aria-controls="car" role="tab" data-toggle="tab">Car Rental</a>
                             </li>
                         </ul>
 
@@ -178,50 +459,50 @@
                                     </form>
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane fade tm-white-bg" id="car">
-                                <div class="tm-search-box effect2">
-                                    <form action="#" method="post" class="hotel-search-form">
-                                        <div class="tm-form-inner">
-                                            <div class="form-group">
-                                                <select class="form-control">
-                                                    <option value="">-- Select Model -- </option>
-                                                    <option value="shangrila">BMW</option>
-                                                    <option value="chatrium">Mercedes-Benz</option>
-                                                    <option value="fourseasons">Toyota</option>
-                                                    <option value="hilton">Honda</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class='input-group date-time' id='datetimepicker3'>
-                                                    <input type='text' class="form-control" placeholder="Pickup Date" />
-                                                    <span class="input-group-addon">
-							                        <span class="fa fa-calendar"></span>
-							                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class='input-group date-time' id='datetimepicker4'>
-                                                    <input type='text' class="form-control" placeholder="Return Date" />
-                                                    <span class="input-group-addon">
-							                        <span class="fa fa-calendar"></span>
-							                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="form-control">
-                                                    <option value="">-- Options -- </option>
-                                                    <option value="">Child Seat</option>
-                                                    <option value="">GPS Navigator</option>
-                                                    <option value="">Insurance</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group tm-yellow-gradient-bg text-center">
-                                            <button type="submit" name="submit" class="tm-yellow-btn">Check Now</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                            {#<div role="tabpanel" class="tab-pane fade tm-white-bg" id="car">#}
+                                {#<div class="tm-search-box effect2">#}
+                                    {#<form action="#" method="post" class="hotel-search-form">#}
+                                        {#<div class="tm-form-inner">#}
+                                            {#<div class="form-group">#}
+                                                {#<select class="form-control">#}
+                                                    {#<option value="">-- Select Model -- </option>#}
+                                                    {#<option value="shangrila">BMW</option>#}
+                                                    {#<option value="chatrium">Mercedes-Benz</option>#}
+                                                    {#<option value="fourseasons">Toyota</option>#}
+                                                    {#<option value="hilton">Honda</option>#}
+                                                {#</select>#}
+                                            {#</div>#}
+                                            {#<div class="form-group">#}
+                                                {#<div class='input-group date-time' id='datetimepicker3'>#}
+                                                    {#<input type='text' class="form-control" placeholder="Pickup Date" />#}
+                                                    {#<span class="input-group-addon">#}
+							                        {#<span class="fa fa-calendar"></span>#}
+							                    {#</span>#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#<div class="form-group">#}
+                                                {#<div class='input-group date-time' id='datetimepicker4'>#}
+                                                    {#<input type='text' class="form-control" placeholder="Return Date" />#}
+                                                    {#<span class="input-group-addon">#}
+							                        {#<span class="fa fa-calendar"></span>#}
+							                    {#</span>#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#<div class="form-group">#}
+                                                {#<select class="form-control">#}
+                                                    {#<option value="">-- Options -- </option>#}
+                                                    {#<option value="">Child Seat</option>#}
+                                                    {#<option value="">GPS Navigator</option>#}
+                                                    {#<option value="">Insurance</option>#}
+                                                {#</select>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                        {#<div class="form-group tm-yellow-gradient-bg text-center">#}
+                                            {#<button type="submit" name="submit" class="tm-yellow-btn">Check Now</button>#}
+                                        {#</div>#}
+                                    {#</form>#}
+                                {#</div>#}
+                            {#</div>#}
                         </div>
                     </div>
                 </div>
@@ -265,6 +546,229 @@
 
         <!-- white bg -->
         {% block body %}{% endblock %}
+        <div id="all">
+            <div id="content">
+            <div class="container" data-animate="fadeInUpBig">
+                <div class="col-md-12">
+                    <div class="box slideshow">
+                        <h3>Get Inspired</h3>
+                        <p class="lead">Get the inspiration from our world class designers</p>
+                        <div id="get-inspired" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="#">
+                                    <img src="{{ asset('frontend/img/img/getinspired1.jpg') }}" alt="Get inspired" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="{{ asset('frontend/img/img/getinspired2.jpg') }}" alt="Get inspired" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="{{ asset('frontend/img/img/getinspired3.jpg') }}" alt="Get inspired" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- *** GET INSPIRED END *** -->
+
+            <!-- *** BLOG HOMEPAGE ***
+ _________________________________________________________ -->
+
+            <div class="box text-center" data-animate="fadeInUp">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3 class="text-uppercase">From our blog</h3>
+                        <p class="lead">What's new in the world of fashion? <a href="blog.html">Check our blog!</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-12" data-animate="fadeInUp">
+
+                    <div id="blog-homepage" class="row">
+                        <div class="col-sm-4">
+                            <div class="post">
+                                <h4><a href="post.html">Le Feto 1</a></h4>
+                                {#<p class="author-category">By <a href="#">John Slim</a> in <a href="">Fashion and style</a>#}
+                                {#</p>#}
+                                <hr>
+                                <p class="intro">   Cet établissement est à 11 minutes à pied de la plage.
+                                                    cette résidence propose des chambres contemporaines dotées de la climatisation.
+                                                    Une navette d'aéroport est disponible depuis l'aéroport international de Dakar.</p>
+                                <p class="read-more"><a href="post.html" class="btn btn-primary">Continuer la lecture</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="post">
+                                <h4><a href="post.html">Le Feto 2</a></h4>
+                                {#<p class="author-category">By <a href="#">John Slim</a> in <a href="">About Minimal</a>#}
+                                {#</p>#}
+                                <hr>
+                                <p class="intro">   Les chambres sont élégamment décorées et possèdent un minibar et une télévision.
+                                                    Les suites disposent d'un balcon. Toutes les chambres comprennent une salle de bains privative.
+                                                   </p>
+                                <p class="read-more"><a href="post.html" class="btn btn-primary">Continuer la lecture</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="post">
+                                <h4><a href="post.html">LE feto 3</a></h4>
+                                {#<p class="author-category">By <a href="#">John Slim</a> in <a href="">About Minimal</a>#}
+                                {#</p>#}
+                                <hr>
+                                <p class="intro">   Dotée d'un parking privé gratuit sur place, la résidence Le Feto se situe à seulement 20 minutes du centre-ville de Mermoz.
+                                                    Le casino se trouve à 3 kilomètres.
+                                                    Une connexion Wi-Fi gratuite est présente dans toute la résidence.</p>
+                                <p class="read-more"><a href="post.html" class="btn btn-primary">Continuer la lecture</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /#blog-homepage -->
+                </div>
+            </div>
+            <div id="footer" data-animate="fadeInUp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <h4>Pages</h4>
+
+                            <ul>
+                                <li><a href="text.html">About us</a>
+                                </li>
+                                <li><a href="text.html">Terms and conditions</a>
+                                </li>
+                                <li><a href="faq.html">FAQ</a>
+                                </li>
+                                <li><a href="contact.html">Contact us</a>
+                                </li>
+                            </ul>
+
+                            <hr>
+
+                            <h4>User section</h4>
+
+                            <ul>
+                                <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                                </li>
+                                <li><a href="register.html">Regiter</a>
+                                </li>
+                            </ul>
+
+                            <hr class="hidden-md hidden-lg hidden-sm">
+
+                        </div>
+                        <!-- /.col-md-3 -->
+
+                        <div class="col-md-3 col-sm-6">
+
+                            <h4>Top categories</h4>
+
+                            <h5>Men</h5>
+
+                            <ul>
+                                <li><a href="category.html">T-shirts</a>
+                                </li>
+                                <li><a href="category.html">Shirts</a>
+                                </li>
+                                <li><a href="category.html">Accessories</a>
+                                </li>
+                            </ul>
+
+                            <h5>Ladies</h5>
+                            <ul>
+                                <li><a href="category.html">T-shirts</a>
+                                </li>
+                                <li><a href="category.html">Skirts</a>
+                                </li>
+                                <li><a href="category.html">Pants</a>
+                                </li>
+                                <li><a href="category.html">Accessories</a>
+                                </li>
+                            </ul>
+
+                            <hr class="hidden-md hidden-lg">
+
+                        </div>
+                        <!-- /.col-md-3 -->
+
+                        <div class="col-md-3 col-sm-6">
+
+                            <h4>Where to find us</h4>
+
+                            <p><strong>Obaju Ltd.</strong>
+                                <br>13/25 New Avenue
+                                <br>New Heaven
+                                <br>45Y 73J
+                                <br>England
+                                <br>
+                                <strong>Great Britain</strong>
+                            </p>
+
+                            <a href="contact.html">Go to contact page</a>
+
+                            <hr class="hidden-md hidden-lg">
+
+                        </div>
+                        <!-- /.col-md-3 -->
+
+
+
+                        <div class="col-md-3 col-sm-6">
+
+                            <h4>Get the news</h4>
+
+                            <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+                            <form>
+                                <div class="input-group">
+
+                                    <input type="text" class="form-control">
+
+                                    <span class="input-group-btn">
+
+			    <button class="btn btn-default" type="button">Subscribe!</button>
+
+			</span>
+
+                                </div>
+                                <!-- /input-group -->
+                            </form>
+
+                            <hr>
+
+                            <h4>Stay in touch</h4>
+
+                            <p class="social">
+                                <a href="#" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>
+                                <a href="#" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
+                            </p>
+
+
+                        </div>
+                        <!-- /.col-md-3 -->
+
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+                <!-- /.container -->
+            </div>
+            </div>
+        </div>
         <footer class="main-footer">
             {#<div class="pull-right hidden-xs">#}
             {#<b>Version</b> 2.3.8#}

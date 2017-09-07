@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Offre</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ offre.id }}</td>
+            </tr>
+            <tr>
+                <th>Libelleoffre</th>
+                <td>{{ offre.libelleOffre }}</td>
+            </tr>
+            <tr>
+                <th>Prixunitaireoffre</th>
+                <td>{{ offre.prixUnitaireOffre }}</td>
+            </tr>
+            <tr>
+                <th>Quantiteoffre</th>
+                <td>{{ offre.quantiteOffre }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('offre_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('offre_edit', { 'id': offre.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

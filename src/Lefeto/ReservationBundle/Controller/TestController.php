@@ -35,7 +35,7 @@ class TestController extends Controller
      * @Route("/hello", name="reservation_test")
      */
     public function helloAction() {
-        return $this->render('test/test.html.twig');
+        return $this->render(':Offres:detail.html.twig');
     }
     /**
      * Creates a new test entity.
