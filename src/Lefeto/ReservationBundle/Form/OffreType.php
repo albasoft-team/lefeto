@@ -13,7 +13,7 @@ class OffreType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('libelleOffre')->add('prixUnitaireOffre')->add('quantiteOffre');
+        $builder->add('libelleOffre')->add('prixUnitaireOffre')->add('quantiteOffre')->add('typelogement');
     }
     
     /**

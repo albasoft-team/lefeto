@@ -30,6 +30,18 @@ class OffreController extends Controller
             'offres' => $offres,
         ));
     }
+    /**
+     * @Route("/detail", name="offre_detail")
+     * @Method("GET")
+     */
+    public function detailAction()
+    {
+//        $em = $this->getDoctrine()->getManager();
+//
+//        $offres = $em->getRepository('ReservationBundle:Offre')->findAll();
+
+        return $this->render('offre/detail.html.twig');
+    }
 
     /**
      * Creates a new offre entity.

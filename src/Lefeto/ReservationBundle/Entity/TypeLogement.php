@@ -47,8 +47,10 @@ class TypeLogement
      * @ORM\JoinColumn(name="residence_id", referencedColumnName="id")
      */
     private $residence;
-
-
+    /**
+     * @ORM\OneToMany(targetEntity="Offre", mappedBy="typelogement")
+     */
+    private $offres;
 
     /**
      * Get id
@@ -154,5 +156,46 @@ class TypeLogement
     public function getResidence()
     {
         return $this->residence;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->offres = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add offre
+     *
+     * @param \Lefeto\ReservationBundle\Entity\Offre $offre
+     *
+     * @return TypeLogement
+     */
+    public function addOffre(\Lefeto\ReservationBundle\Entity\Offre $offre)
+    {
+        $this->offres[] = $offre;
+
+        return $this;
+    }
+
+    /**
+     * Remove offre
+     *
+     * @param \Lefeto\ReservationBundle\Entity\Offre $offre
+     */
+    public function removeOffre(\Lefeto\ReservationBundle\Entity\Offre $offre)
+    {
+        $this->offres->removeElement($offre);
+    }
+
+    /**
+     * Get offres
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOffres()
+    {
+        return $this->offres;
     }
 }

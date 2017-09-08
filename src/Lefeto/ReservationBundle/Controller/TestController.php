@@ -6,7 +6,6 @@ use Lefeto\ReservationBundle\Entity\Test;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
-
 /**
  * Test controller.
  *
@@ -26,7 +25,7 @@ class TestController extends Controller
 
         $tests = $em->getRepository('ReservationBundle:Test')->findAll();
 
-        return $this->render(':Offres:offres.html.twig'
+        return $this->render(':test:index.html.twig'
         );
     }
 
