@@ -20,7 +20,7 @@
         <link href="{{ asset('frontend/css/owl.theme.css') }}" rel="stylesheet">
 
         <!-- theme stylesheet -->
-        <link href="{{ asset('frontend/css/style.default.css') }}" rel="stylesheet" id="theme-stylesheet">
+        <link href="{{ asset('frontend/css/style.lefeto.css') }}" rel="stylesheet" id="theme-stylesheet">
 
         <!-- your stylesheet with modifications -->
         <link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet">
@@ -84,7 +84,7 @@
             {#</div>#}
         {#</div>#}
         <div id="top">
-            <div class="container">
+            <div class="container" style="color: orangered">
                 <div class="col-md-6 offer" data-animate="fadeInDown">
                     <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">Get flat 35% off on orders over $50!</a>
                 </div>
@@ -140,19 +140,6 @@
                         <img src="{{ asset('frontend/img/img/logo.png') }}" alt="Obaju logo" class="hidden-xs">
                         <img src="{{ asset('frontend/img/img/logo-small.png') }}" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
                     </a>
-                    {#<div class="navbar-buttons">#}
-                        {#<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">#}
-                            {#<span class="sr-only">Toggle navigation</span>#}
-                            {#<i class="fa fa-align-justify"></i>#}
-                        {#</button>#}
-                        {#<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#search">#}
-                            {#<span class="sr-only">Toggle search</span>#}
-                            {#<i class="fa fa-search"></i>#}
-                        {#</button>#}
-                        {#<a class="btn btn-default navbar-toggle" href="basket.html">#}
-                            {#<i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">3 items in cart</span>#}
-                        {#</a>#}
-                    {#</div>#}
                 </div>
                 <!--/.navbar-header -->
 
@@ -335,7 +322,7 @@
                 <div class="navbar-buttons">
 
                     <div class="navbar-collapse collapse right" id="basket-overview">
-                        <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
+                        <a href="{{ path('offre_panier') }}" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm"> 3 offres selectionnées</span></a>
                     </div>
                     <!--/.nav-collapse -->
 
@@ -377,7 +364,7 @@
                             <p class="tm-banner-subtitle">For Your Holidays</p>
                             <a href="#more" class="tm-banner-link">Learn More</a>
                         </div>
-                        <img src="{{ asset('frontend/img/banner-1.jpg') }}" alt="Image" />
+                        <img src="{{ asset('frontend/img/feto/102054014.jpg') }}" alt="Image" />
                     </li>
                     <li>
                         <div class="tm-banner-inner">
@@ -385,7 +372,7 @@
                             <p class="tm-banner-subtitle">Wonderful Destinations</p>
                             <a href="#more" class="tm-banner-link">Learn More</a>
                         </div>
-                        <img src="{{ asset('frontend/img/banner-2.jpg') }}" alt="Image" />
+                        <img src="{{ asset('frontend/img/feto/dedantur.jpg') }}" alt="Image" />
                     </li>
                     <li>
                         <div class="tm-banner-inner">
@@ -393,21 +380,23 @@
                             <p class="tm-banner-subtitle">Velit Auctor</p>
                             <a href="#more" class="tm-banner-link">Learn More</a>
                         </div>
-                        <img src="{{ asset('frontend/img/banner-3.jpg') }}" alt="Image" />
+                        <img src="{{ asset('frontend/img/feto/feto2.jpg') }}" alt="Image" />
                     </li>
                 </ul>
             </div>
         </section>
 
         <!-- gray bg -->
-        <section class="container tm-home-section-1" id="more">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4">
+        <section class=" tm-home-section-1" id="more">
+            <div class="">
+                <div class="col-lg-3 col-md-3 col-sm-3" >
                     <!-- Nav tabs -->
                     <div class="tm-home-box-1">
-                        <ul class="nav nav-tabs tm-white-bg" role="tablist" id="hotelCarTabs">
+                        <ul class="nav nav-tabs tm-white-bg text-center" role="tablist" id="hotelCarTabs">
                             <li role="presentation" class="active">
-                                <a href="#hotel" aria-controls="hotel" role="tab" data-toggle="tab">Hotel</a>
+                                <a href="#hotel" aria-controls="hotel" role="tab" data-toggle="tab">
+                                    <h2 >Réservation</h2>
+                                </a>
                             </li>
                         </ul>
 
@@ -419,11 +408,13 @@
                                         <div class="tm-form-inner">
                                             <div class="form-group">
                                                 <select class="form-control">
-                                                    <option value="">-- Select Hotel -- </option>
-                                                    <option value="shangrila">Shangri-La</option>
-                                                    <option value="chatrium">Chatrium</option>
-                                                    <option value="fourseasons">Four Seasons</option>
-                                                    <option value="hilton">Hilton</option>
+                                                    <option value="">-- Type de logement -- </option>
+                                                    <option value="ch_std">Chambre Simple Standard</option>
+                                                    <option value="ch_lux">Chambre de luxe</option>
+                                                    <option value="s_std">Suite Junior</option>
+                                                    <option value="s_lux">Suite de luxe</option>
+                                                    {#<option value="fourseasons">Four Seasons</option>#}
+                                                    {#<option value="hilton">Hilton</option>#}
                                                 </select>
                                             </div>
                                             <div class="form-group">
@@ -459,86 +450,43 @@
                                     </form>
                                 </div>
                             </div>
-                            {#<div role="tabpanel" class="tab-pane fade tm-white-bg" id="car">#}
-                                {#<div class="tm-search-box effect2">#}
-                                    {#<form action="#" method="post" class="hotel-search-form">#}
-                                        {#<div class="tm-form-inner">#}
-                                            {#<div class="form-group">#}
-                                                {#<select class="form-control">#}
-                                                    {#<option value="">-- Select Model -- </option>#}
-                                                    {#<option value="shangrila">BMW</option>#}
-                                                    {#<option value="chatrium">Mercedes-Benz</option>#}
-                                                    {#<option value="fourseasons">Toyota</option>#}
-                                                    {#<option value="hilton">Honda</option>#}
-                                                {#</select>#}
-                                            {#</div>#}
-                                            {#<div class="form-group">#}
-                                                {#<div class='input-group date-time' id='datetimepicker3'>#}
-                                                    {#<input type='text' class="form-control" placeholder="Pickup Date" />#}
-                                                    {#<span class="input-group-addon">#}
-							                        {#<span class="fa fa-calendar"></span>#}
-							                    {#</span>#}
-                                                {#</div>#}
-                                            {#</div>#}
-                                            {#<div class="form-group">#}
-                                                {#<div class='input-group date-time' id='datetimepicker4'>#}
-                                                    {#<input type='text' class="form-control" placeholder="Return Date" />#}
-                                                    {#<span class="input-group-addon">#}
-							                        {#<span class="fa fa-calendar"></span>#}
-							                    {#</span>#}
-                                                {#</div>#}
-                                            {#</div>#}
-                                            {#<div class="form-group">#}
-                                                {#<select class="form-control">#}
-                                                    {#<option value="">-- Options -- </option>#}
-                                                    {#<option value="">Child Seat</option>#}
-                                                    {#<option value="">GPS Navigator</option>#}
-                                                    {#<option value="">Insurance</option>#}
-                                                {#</select>#}
-                                            {#</div>#}
-                                        {#</div>#}
-                                        {#<div class="form-group tm-yellow-gradient-bg text-center">#}
-                                            {#<button type="submit" name="submit" class="tm-yellow-btn">Check Now</button>#}
-                                        {#</div>#}
-                                    {#</form>#}
-                                {#</div>#}
-                            {#</div>#}
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
-                        <img src="{{ asset('frontend/img/index-01.jpg') }}" alt="image" class="img-responsive">
-                        <a href="#">
-                            <div class="tm-green-gradient-bg tm-city-price-container">
-                                <span>New York</span>
-                                <span>$6,600</span>
-                            </div>
-                        </a>
+                <div class="col-lg-3 col-md-3 col-sm-3" >
+                        <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
+                            <img src="{{ asset('frontend/img/index-01.jpg') }}" alt="image" class="img-responsive">
+                            <a href="#">
+                                <div class="tm-green-gradient-bg tm-city-price-container text-center">
+                                    <em>Le Feto 1 <br/>
+                                    Sacre Coeur II Pyrotechnie Villa n°91</em>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                <div class="col-lg-3 col-md-3 col-sm-3" >
+                        <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">
+                            <img src="{{ asset('frontend/img/index-02.jpg') }}" alt="image" class="img-responsive">
+                            <a href="#">
+                                <div class="tm-red-gradient-bg tm-city-price-container text-center">
+                                    <em>Le Feto 2 <br/>
+                                        Nord Foire Route de l'aéroport</em>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">
+                            <img src="{{ asset('frontend/img/index-02.jpg') }}" alt="image" class="img-responsive">
+                            <a href="#">
+                                <div class="tm-red-gradient-bg tm-city-price-container text-center">
+                                    <em> Le Feto 3 <br/>
+                                    Sacre Coeur II Pyrotechnie Villa n°91</em>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">
-                        <img src="{{ asset('frontend/img/index-02.jpg') }}" alt="image" class="img-responsive">
-                        <a href="#">
-                            <div class="tm-red-gradient-bg tm-city-price-container">
-                                <span>Paris</span>
-                                <span>$4,200</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                {#<div class="col-lg-3 col-md-3 col-sm-6">#}
-                    {#<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">#}
-                        {#<img src="{{ asset('frontend/img/index-02.jpg') }}" alt="image" class="img-responsive">#}
-                        {#<a href="#">#}
-                            {#<div class="tm-red-gradient-bg tm-city-price-container">#}
-                                {#<span>Paris</span>#}
-                                {#<span>$4,200</span>#}
-                            {#</div>#}
-                        {#</a>#}
-                    {#</div>#}
-                {#</div>#}
             </div>
 
 
@@ -641,27 +589,27 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <h4>Pages</h4>
+                            <h4>Menu</h4>
 
                             <ul>
-                                <li><a href="text.html">About us</a>
+                                <li><a href="text.html">Acceil</a>
                                 </li>
-                                <li><a href="text.html">Terms and conditions</a>
+                                <li><a href="text.html">Nos résidences</a>
                                 </li>
-                                <li><a href="faq.html">FAQ</a>
+                                <li><a href="faq.html"></a>
                                 </li>
-                                <li><a href="contact.html">Contact us</a>
+                                <li><a href="contact.html">Contactez-nous</a>
                                 </li>
                             </ul>
 
                             <hr>
 
-                            <h4>User section</h4>
+                            <h4>Gestion membre</h4>
 
                             <ul>
-                                <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                                <li><a href="#" data-toggle="modal" data-target="#login-modal">Se connecter</a>
                                 </li>
-                                <li><a href="register.html">Regiter</a>
+                                <li><a href="register.html">S'enregistrer</a>
                                 </li>
                             </ul>
 
@@ -672,28 +620,22 @@
 
                         <div class="col-md-3 col-sm-6">
 
-                            <h4>Top categories</h4>
+                            <h4>Top catégories</h4>
 
-                            <h5>Men</h5>
+                            <h5>Chambres</h5>
 
                             <ul>
-                                <li><a href="category.html">T-shirts</a>
+                                <li><a href="category.html">Standard</a>
                                 </li>
-                                <li><a href="category.html">Shirts</a>
-                                </li>
-                                <li><a href="category.html">Accessories</a>
+                                <li><a href="category.html">De luxe</a>
                                 </li>
                             </ul>
 
-                            <h5>Ladies</h5>
+                            <h5>Suites</h5>
                             <ul>
-                                <li><a href="category.html">T-shirts</a>
+                                <li><a href="category.html">Simple</a>
                                 </li>
-                                <li><a href="category.html">Skirts</a>
-                                </li>
-                                <li><a href="category.html">Pants</a>
-                                </li>
-                                <li><a href="category.html">Accessories</a>
+                                <li><a href="category.html">Junior</a>
                                 </li>
                             </ul>
 
@@ -704,31 +646,26 @@
 
                         <div class="col-md-3 col-sm-6">
 
-                            <h4>Where to find us</h4>
+                            <h4>Nous localiser</h4>
 
-                            <p><strong>Obaju Ltd.</strong>
-                                <br>13/25 New Avenue
-                                <br>New Heaven
-                                <br>45Y 73J
-                                <br>England
+                            <p><strong>Le Feto 2</strong>
+                                <br>Sicap Foire
+                                <br> Dakar-Sénégal
                                 <br>
-                                <strong>Great Britain</strong>
+                                <strong>Siége social</strong>
                             </p>
 
-                            <a href="contact.html">Go to contact page</a>
+                            <a href="contact.html">Aller à la page de contact</a>
 
                             <hr class="hidden-md hidden-lg">
 
                         </div>
                         <!-- /.col-md-3 -->
-
-
-
                         <div class="col-md-3 col-sm-6">
 
-                            <h4>Get the news</h4>
+                            <h4>recevoir les nouveautés</h4>
 
-                            <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                            <p class="text-muted">Veillez indiquer ci dessous votre adresse email pour recevoir les nouvelles offres</p>
 
                             <form>
                                 <div class="input-group">
@@ -737,7 +674,7 @@
 
                                     <span class="input-group-btn">
 
-			    <button class="btn btn-default" type="button">Subscribe!</button>
+			    <button class="btn btn-default" type="button">S'inscrire</button>
 
 			</span>
 
@@ -786,7 +723,6 @@
     <script src="{{ asset('frontend/js/bootstrap-datetimepicker.min.js') }}"></script>	<!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
     <script src="{{ asset('frontend/js/jquery.flexslider-min.js') }}"></script>
     <script src="{{ asset('frontend/js/templatemo-script.js') }}"></script>
-
     <script src="{{ asset('frontend/js/respond.min.js') }}"></script>
     <script src="{{ asset('frontend/js/jquery.cookie.js') }}"></script>
     <script src="{{ asset('frontend/js/waypoints.min.js') }}"></script>

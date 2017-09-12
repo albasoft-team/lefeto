@@ -40,13 +40,13 @@
             {#<a href="{{ path('offre_new') }}">Create a new offre</a>#}
         {#</li>#}
     {#</ul>#}
-    <div id="all">
+    {#<div id="all">#}
         <div id="content">
             <div id="hot">
                 <div class="box">
                     <div class="container">
                         <div class="col-md-12">
-                            <h2>Hot this week</h2>
+                            <h2>Nos offres à la une</h2>
                         </div>
                     </div>
                 </div>
@@ -59,22 +59,28 @@
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="{{ path('offre_detail') }}">
-                                                <img src="{{ asset('frontend/img/img/product2.jpg') }}" alt="" class="img-responsive">
+                                                <img src="{{ asset('frontend/img/feto/chambre.jpg') }}" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="{{ path('offre_detail') }}">
-                                                <img src="{{ asset('frontend/img/img/product2_2.jpg') }}" alt="" class="img-responsive">
+                                                <img src="{{ asset('frontend/img/feto/chambre1.jpg') }}" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="{{ path('offre_detail') }}" class="invisible">
-                                    <img src="{{ asset('frontend/img/img/product2.jpg') }}" alt="" class="img-responsive">
+                                    <img src="{{ asset('frontend/img/feto/ch_doubl_std.jpg') }}" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="{{ path('offre_detail') }}">White Blouse Armani</a></h3>
-                                    <p class="price"><del>$280</del> $143.00</p>
+                                    <h3><a href="{{ path('offre_detail') }}">Chambre double standard</a></h3>
+                                    <p class="price">XOF 51 000
+                                        <a href="{{ path('offre_panier') }}" class="btn btn-primary navbar-btn">
+                                            <i class="glyphicon glyphicon-plus"></i>
+                                            <span class="hidden-sm"> Réserver</span>
+                                        </a>
+                                    </p>
+
                                 </div>
                                 <!-- /.text -->
 
@@ -84,17 +90,10 @@
                                 </div>
                                 <!-- /.ribbon -->
 
-                                <div class="ribbon new">
-                                    <div class="theribbon">Détail</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
-
-                                <div class="ribbon gift">
-                                    <div class="theribbon">Reserver</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
+                                {#<div class="ribbon new">#}
+                                    {#<div class="theribbon">Détail</div>#}
+                                    {#<div class="ribbon-background"></div>#}
+                                {#</div>#}
                             </div>
                             <!-- /.product -->
                         </div>
@@ -105,22 +104,27 @@
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="{{ path('offre_detail') }}">
-                                                <img src="{{ asset('frontend/img/img/product3.jpg') }}" alt="" class="img-responsive">
+                                                <img src="{{ asset('frontend/img/feto/chambre1.jpg') }}" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                         <div class="back">
                                             <a href="{{ path('offre_detail') }}">
-                                                <img src="{{ asset('frontend/img/img/product3_2.jpg') }}" alt="" class="img-responsive">
+                                                <img src="{{ asset('frontend/img/feto/ch2.jpg') }}" alt="" class="img-responsive">
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="{{ path('offre_detail') }}" class="invisible">
-                                    <img src="{{ asset('frontend/img/img/product3.jpg') }}" alt="" class="img-responsive">
+                                    <img src="{{ asset('frontend/img/feto/chambre1.jpg') }}" alt="" class="img-responsive">
                                 </a>
                                 <div class="text">
-                                    <h3><a href="{{ path('offre_detail') }}">Black Blouse Versace</a></h3>
-                                    <p class="price">$143.00</p>
+                                    <h3><a href="{{ path('offre_detail') }}">Chambre simple</a></h3>
+                                    <p class="price">XOF 40 OOO
+                                        <a href="{{ path('offre_panier') }}" class="btn btn-primary navbar-btn">
+                                            <i class="glyphicon glyphicon-plus"></i>
+                                            <span class="hidden-sm"> Réserver</span>
+                                        </a>
+                                    </p>
                                 </div>
                                 <!-- /.text -->
 
@@ -130,16 +134,16 @@
                                 </div>
                                 <!-- /.ribbon -->
 
-                                <div class="ribbon new">
-                                    <div class="theribbon">Détail</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
-                                <!-- /.ribbon -->
+                                {#<div class="ribbon new">#}
+                                    {#<div class="theribbon">Détail</div>#}
+                                    {#<div class="ribbon-background"></div>#}
+                                {#</div>#}
+                                {#<!-- /.ribbon -->#}
 
-                                <div class="ribbon gift">
-                                    <div class="theribbon">Reserver</div>
-                                    <div class="ribbon-background"></div>
-                                </div>
+                                {#<div class="ribbon gift">#}
+                                    {#<div class="theribbon">Reserver</div>#}
+                                    {#<div class="ribbon-background"></div>#}
+                                {#</div>#}
                                 <!-- /.text -->
                             </div>
                             <!-- /.product -->

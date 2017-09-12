@@ -2,7 +2,7 @@
 
 namespace Lefeto\ReservationBundle\Controller;
 
-use Lefeto\ReservationBundle\Entity\TypeLogement;
+use Lefeto\ReservationBundle\Entity\Typelogement;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
@@ -12,10 +12,10 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component
  *
  * @Route("typelogement")
  */
-class TypeLogementController extends Controller
+class TypelogementController extends Controller
 {
     /**
-     * Lists all typeLogement entities.
+     * Lists all typelogement entities.
      *
      * @Route("/", name="typelogement_index")
      * @Method("GET")
@@ -24,94 +24,94 @@ class TypeLogementController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $typeLogements = $em->getRepository('ReservationBundle:TypeLogement')->findAll();
+        $typelogements = $em->getRepository('ReservationBundle:Typelogement')->findAll();
 
         return $this->render('typelogement/index.html.twig', array(
-            'typeLogements' => $typeLogements,
+            'typelogements' => $typelogements,
         ));
     }
 
     /**
-     * Creates a new typeLogement entity.
+     * Creates a new typelogement entity.
      *
      * @Route("/new", name="typelogement_new")
      * @Method({"GET", "POST"})
      */
     public function newAction(Request $request)
     {
-        $typeLogement = new Typelogement();
-        $form = $this->createForm('Lefeto\ReservationBundle\Form\TypeLogementType', $typeLogement);
+        $typelogement = new Typelogement();
+        $form = $this->createForm('Lefeto\ReservationBundle\Form\TypelogementType', $typelogement);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-            $em->persist($typeLogement);
+            $em->persist($typelogement);
             $em->flush();
 
-            return $this->redirectToRoute('typelogement_show', array('id' => $typeLogement->getId()));
+            return $this->redirectToRoute('typelogement_show', array('id' => $typelogement->getId()));
         }
 
         return $this->render('typelogement/new.html.twig', array(
-            'typeLogement' => $typeLogement,
+            'typelogement' => $typelogement,
             'form' => $form->createView(),
         ));
     }
 
     /**
-     * Finds and displays a typeLogement entity.
+     * Finds and displays a typelogement entity.
      *
      * @Route("/{id}", name="typelogement_show")
      * @Method("GET")
      */
-    public function showAction(TypeLogement $typeLogement)
+    public function showAction(Typelogement $typelogement)
     {
-        $deleteForm = $this->createDeleteForm($typeLogement);
+        $deleteForm = $this->createDeleteForm($typelogement);
 
         return $this->render('typelogement/show.html.twig', array(
-            'typeLogement' => $typeLogement,
+            'typelogement' => $typelogement,
             'delete_form' => $deleteForm->createView(),
         ));
     }
 
     /**
-     * Displays a form to edit an existing typeLogement entity.
+     * Displays a form to edit an existing typelogement entity.
      *
      * @Route("/{id}/edit", name="typelogement_edit")
      * @Method({"GET", "POST"})
      */
-    public function editAction(Request $request, TypeLogement $typeLogement)
+    public function editAction(Request $request, Typelogement $typelogement)
     {
-        $deleteForm = $this->createDeleteForm($typeLogement);
-        $editForm = $this->createForm('Lefeto\ReservationBundle\Form\TypeLogementType', $typeLogement);
+        $deleteForm = $this->createDeleteForm($typelogement);
+        $editForm = $this->createForm('Lefeto\ReservationBundle\Form\TypelogementType', $typelogement);
         $editForm->handleRequest($request);
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('typelogement_edit', array('id' => $typeLogement->getId()));
+            return $this->redirectToRoute('typelogement_edit', array('id' => $typelogement->getId()));
         }
 
         return $this->render('typelogement/edit.html.twig', array(
-            'typeLogement' => $typeLogement,
+            'typelogement' => $typelogement,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
 
     /**
-     * Deletes a typeLogement entity.
+     * Deletes a typelogement entity.
      *
      * @Route("/{id}", name="typelogement_delete")
      * @Method("DELETE")
      */
-    public function deleteAction(Request $request, TypeLogement $typeLogement)
+    public function deleteAction(Request $request, Typelogement $typelogement)
     {
-        $form = $this->createDeleteForm($typeLogement);
+        $form = $this->createDeleteForm($typelogement);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
-            $em->remove($typeLogement);
+            $em->remove($typelogement);
             $em->flush();
         }
 
@@ -119,16 +119,16 @@ class TypeLogementController extends Controller
     }
 
     /**
-     * Creates a form to delete a typeLogement entity.
+     * Creates a form to delete a typelogement entity.
      *
-     * @param TypeLogement $typeLogement The typeLogement entity
+     * @param Typelogement $typelogement The typelogement entity
      *
      * @return \Symfony\Component\Form\Form The form
      */
-    private function createDeleteForm(TypeLogement $typeLogement)
+    private function createDeleteForm(Typelogement $typelogement)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('typelogement_delete', array('id' => $typeLogement->getId())))
+            ->setAction($this->generateUrl('typelogement_delete', array('id' => $typelogement->getId())))
             ->setMethod('DELETE')
             ->getForm()
         ;

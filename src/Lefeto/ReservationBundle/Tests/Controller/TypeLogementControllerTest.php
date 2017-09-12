@@ -4,7 +4,7 @@ namespace Lefeto\ReservationBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class TypeLogementControllerTest extends WebTestCase
+class TypelogementControllerTest extends WebTestCase
 {
     /*
     public function testCompleteScenario()

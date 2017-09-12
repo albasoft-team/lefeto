@@ -44,6 +44,19 @@ class OffreController extends Controller
     }
 
     /**
+     * @Route("/panier", name="offre_panier")
+     * @Method("GET")
+     */
+    public function panierAction()
+    {
+//        $em = $this->getDoctrine()->getManager();
+//
+//        $offres = $em->getRepository('ReservationBundle:Offre')->findAll();
+
+        return $this->render(':offre:panier.html.twig');
+    }
+
+    /**
      * Creates a new offre entity.
      *
      * @Route("/new", name="offre_new")

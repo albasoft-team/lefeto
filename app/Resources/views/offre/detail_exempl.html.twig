@@ -20,286 +20,286 @@
     <link href="{{ asset('frontend/css/owl.theme.css') }}" rel="stylesheet">
 
     <!-- theme stylesheet -->
-    <link href="{{ asset('frontend/css/style.lefeto.css') }}" rel="stylesheet" id="theme-stylesheet">
+    <link href="{{ asset('frontend/css/style.default.css') }}" rel="stylesheet" id="theme-stylesheet">
 
     <!-- your stylesheet with modifications -->
     <link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet">
 </head>
 <body >
-<div id="top">
-    <div class="container">
-        <div class="col-md-6 offer" data-animate="fadeInDown">
-            <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">Get flat 35% off on orders over $50!</a>
+    <div id="top">
+        <div class="container">
+            <div class="col-md-6 offer" data-animate="fadeInDown">
+                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">Get flat 35% off on orders over $50!</a>
+            </div>
+            <div class="col-md-6" data-animate="fadeInDown">
+                <ul class="menu">
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                    </li>
+                    <li><a href="register.html">Register</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a>
+                    </li>
+                    <li><a href="#">Recently viewed</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-6" data-animate="fadeInDown">
-            <ul class="menu">
-                <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
-                </li>
-                <li><a href="register.html">Register</a>
-                </li>
-                <li><a href="contact.html">Contact</a>
-                </li>
-                <li><a href="#">Recently viewed</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
 
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="Login">Customer login</h4>
-                </div>
-                <div class="modal-body">
-                    <form action="customer-orders.html" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="email-modal" placeholder="email">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="password-modal" placeholder="password">
-                        </div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="Login">Customer login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="customer-orders.html" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="email-modal" placeholder="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password-modal" placeholder="password">
+                            </div>
 
-                        <p class="text-center">
-                            <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
-                        </p>
+                            <p class="text-center">
+                                <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                            </p>
 
-                    </form>
+                        </form>
 
-                    <p class="text-center text-muted">Not registered yet?</p>
-                    <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+                        <p class="text-center text-muted">Not registered yet?</p>
+                        <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="navbar navbar-default yamm" role="navigation" id="navbar">
-    <div class="container">
-        <div class="navbar-header">
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
 
-            <a class="navbar-brand home" href="index.html" data-animate-hover="bounce">
-                <img src="{{ asset('frontend/img/img/logo.png') }}" alt="Obaju logo" class="hidden-xs">
-                <img src="{{ asset('frontend/img/img/logo-small.png') }}" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
-            </a>
-        </div>
-        <!--/.navbar-header -->
+                <a class="navbar-brand home" href="index.html" data-animate-hover="bounce">
+                    <img src="{{ asset('frontend/img/img/logo.png') }}" alt="Obaju logo" class="hidden-xs">
+                    <img src="{{ asset('frontend/img/img/logo-small.png') }}" alt="Obaju logo" class="visible-xs"><span class="sr-only">Obaju - go to homepage</span>
+                </a>
+            </div>
+            <!--/.navbar-header -->
 
-        <div class="navbar-collapse collapse" id="navigation">
+            <div class="navbar-collapse collapse" id="navigation">
 
-            <ul class="nav navbar-nav navbar-left">
-                <li class="active"><a href="index.html">Acceuil</a>
-                </li>
-                <li class="dropdown yamm-fw">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Nos Résidences <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <div class="yamm-content">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <h5>Nos résidences</h5>
-                                        <ul>
-                                            <li><a href="category.html">Le feto 1</a>
-                                            </li>
-                                            <li><a href="category.html">Le feto 2</a>
-                                            </li>
-                                            <li><a href="category.html">Le feto 3</a>
-                                            </li>
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="index.html">Acceuil</a>
+                    </li>
+                    <li class="dropdown yamm-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Nos Résidences <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="yamm-content">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <h5>Nos résidences</h5>
+                                            <ul>
+                                                <li><a href="category.html">Le feto 1</a>
+                                                </li>
+                                                <li><a href="category.html">Le feto 2</a>
+                                                </li>
+                                                <li><a href="category.html">Le feto 3</a>
+                                                </li>
 
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <h5>Nos Offres</h5>
-                                        <ul>
-                                            <h3>Chambres</h3>
-                                            <li><a href="category.html">Standard</a>
-                                            </li>
-                                            <li><a href="category.html">Luxes</a>
-                                            </li>
-                                            <h3>Suites</h3>
-                                            <li><a href="category.html">Standard</a>
-                                            </li>
-                                            <li><a href="category.html">Luxes</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="banner">
-                                            <a href="#">
-                                                <img src="{{ asset('frontend/img/img/banner.jpg') }}" class="img img-responsive" alt="">
-                                            </a>
+                                            </ul>
                                         </div>
-                                        <div class="banner">
-                                            <a href="#">
-                                                <img src="{{ asset('frontend/img/banner-2.jpg') }}" class="img img-responsive" alt="">
-                                            </a>
+                                        <div class="col-sm-4">
+                                            <h5>Nos Offres</h5>
+                                            <ul>
+                                                <h3>Chambres</h3>
+                                                <li><a href="category.html">Standard</a>
+                                                </li>
+                                                <li><a href="category.html">Luxes</a>
+                                                </li>
+                                                <h3>Suites</h3>
+                                                <li><a href="category.html">Standard</a>
+                                                </li>
+                                                <li><a href="category.html">Luxes</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.yamm-content -->
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="dropdown yamm-fw">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Le Restaurant <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <div class="yamm-content">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h5>Une description</h5>
-                                        <ul>
-                                            <li><a href="category.html">T-shirts</a>
-                                            </li>
-                                            <li><a href="category.html">Shirts</a>
-                                            </li>
-                                            <li><a href="category.html">Pants</a>
-                                            </li>
-                                            <li><a href="category.html">Accessories</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="banner">
-                                            <a href="#">
-                                                <img src="{{ asset('frontend/img/banner-1.jpg') }}" class="img img-responsive" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="banner">
-                                            <a href="#">
-                                                <img src="{{ asset('frontend/img/banner-2.jpg') }}" class="img img-responsive" alt="">
-                                            </a>
+                                        <div class="col-sm-4">
+                                            <div class="banner">
+                                                <a href="#">
+                                                    <img src="{{ asset('frontend/img/img/banner.jpg') }}" class="img img-responsive" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="banner">
+                                                <a href="#">
+                                                    <img src="{{ asset('frontend/img/banner-2.jpg') }}" class="img img-responsive" alt="">
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- /.yamm-content -->
-                        </li>
-                    </ul>
-                </li>
+                                <!-- /.yamm-content -->
+                            </li>
+                        </ul>
+                    </li>
 
-                <li class="dropdown yamm-fw">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Template <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <div class="yamm-content">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <h5>Shop</h5>
-                                        <ul>
-                                            <li><a href="index.html">Homepage</a>
-                                            </li>
-                                            <li><a href="category.html">Category - sidebar left</a>
-                                            </li>
-                                            <li><a href="category-right.html">Category - sidebar right</a>
-                                            </li>
-                                            <li><a href="category-full.html">Category - full width</a>
-                                            </li>
-                                            <li><a href="detail.html">Product detail</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <h5>User</h5>
-                                        <ul>
-                                            <li><a href="register.html">Register / login</a>
-                                            </li>
-                                            <li><a href="customer-orders.html">Orders history</a>
-                                            </li>
-                                            <li><a href="customer-order.html">Order history detail</a>
-                                            </li>
-                                            <li><a href="customer-wishlist.html">Wishlist</a>
-                                            </li>
-                                            <li><a href="customer-account.html">Customer account / change password</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <h5>Order process</h5>
-                                        <ul>
-                                            <li><a href="basket.html">Shopping cart</a>
-                                            </li>
-                                            <li><a href="checkout1.html">Checkout - step 1</a>
-                                            </li>
-                                            <li><a href="checkout2.html">Checkout - step 2</a>
-                                            </li>
-                                            <li><a href="checkout3.html">Checkout - step 3</a>
-                                            </li>
-                                            <li><a href="checkout4.html">Checkout - step 4</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <h5>Pages and blog</h5>
-                                        <ul>
-                                            <li><a href="blog.html">Blog listing</a>
-                                            </li>
-                                            <li><a href="post.html">Blog Post</a>
-                                            </li>
-                                            <li><a href="faq.html">FAQ</a>
-                                            </li>
-                                            <li><a href="text.html">Text page</a>
-                                            </li>
-                                            <li><a href="text-right.html">Text page - right sidebar</a>
-                                            </li>
-                                            <li><a href="404.html">404 page</a>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a>
-                                            </li>
-                                        </ul>
+                    <li class="dropdown yamm-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Le Restaurant <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="yamm-content">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h5>Une description</h5>
+                                            <ul>
+                                                <li><a href="category.html">T-shirts</a>
+                                                </li>
+                                                <li><a href="category.html">Shirts</a>
+                                                </li>
+                                                <li><a href="category.html">Pants</a>
+                                                </li>
+                                                <li><a href="category.html">Accessories</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="banner">
+                                                <a href="#">
+                                                    <img src="{{ asset('frontend/img/banner-1.jpg') }}" class="img img-responsive" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="banner">
+                                                <a href="#">
+                                                    <img src="{{ asset('frontend/img/banner-2.jpg') }}" class="img img-responsive" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- /.yamm-content -->
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                                <!-- /.yamm-content -->
+                            </li>
+                        </ul>
+                    </li>
 
-        </div>
-        <!--/.nav-collapse -->
+                    <li class="dropdown yamm-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Template <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="yamm-content">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h5>Shop</h5>
+                                            <ul>
+                                                <li><a href="index.html">Homepage</a>
+                                                </li>
+                                                <li><a href="category.html">Category - sidebar left</a>
+                                                </li>
+                                                <li><a href="category-right.html">Category - sidebar right</a>
+                                                </li>
+                                                <li><a href="category-full.html">Category - full width</a>
+                                                </li>
+                                                <li><a href="detail.html">Product detail</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h5>User</h5>
+                                            <ul>
+                                                <li><a href="register.html">Register / login</a>
+                                                </li>
+                                                <li><a href="customer-orders.html">Orders history</a>
+                                                </li>
+                                                <li><a href="customer-order.html">Order history detail</a>
+                                                </li>
+                                                <li><a href="customer-wishlist.html">Wishlist</a>
+                                                </li>
+                                                <li><a href="customer-account.html">Customer account / change password</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h5>Order process</h5>
+                                            <ul>
+                                                <li><a href="basket.html">Shopping cart</a>
+                                                </li>
+                                                <li><a href="checkout1.html">Checkout - step 1</a>
+                                                </li>
+                                                <li><a href="checkout2.html">Checkout - step 2</a>
+                                                </li>
+                                                <li><a href="checkout3.html">Checkout - step 3</a>
+                                                </li>
+                                                <li><a href="checkout4.html">Checkout - step 4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h5>Pages and blog</h5>
+                                            <ul>
+                                                <li><a href="blog.html">Blog listing</a>
+                                                </li>
+                                                <li><a href="post.html">Blog Post</a>
+                                                </li>
+                                                <li><a href="faq.html">FAQ</a>
+                                                </li>
+                                                <li><a href="text.html">Text page</a>
+                                                </li>
+                                                <li><a href="text-right.html">Text page - right sidebar</a>
+                                                </li>
+                                                <li><a href="404.html">404 page</a>
+                                                </li>
+                                                <li><a href="contact.html">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.yamm-content -->
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
 
-        <div class="navbar-buttons">
-
-            <div class="navbar-collapse collapse right" id="basket-overview">
-                <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
             </div>
             <!--/.nav-collapse -->
 
-            <div class="navbar-collapse collapse right" id="search-not-mobile">
-                <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
-                    <span class="sr-only">Toggle search</span>
-                    <i class="fa fa-search"></i>
-                </button>
+            <div class="navbar-buttons">
+
+                <div class="navbar-collapse collapse right" id="basket-overview">
+                    <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
+                </div>
+                <!--/.nav-collapse -->
+
+                <div class="navbar-collapse collapse right" id="search-not-mobile">
+                    <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
+                        <span class="sr-only">Toggle search</span>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
             </div>
 
-        </div>
+            <div class="collapse clearfix" id="search">
 
-        <div class="collapse clearfix" id="search">
-
-            <form class="navbar-form" role="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <span class="input-group-btn">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
 
                 <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
 
                 </span>
-                </div>
-            </form>
+                    </div>
+                </form>
+
+            </div>
+            <!--/.nav-collapse -->
 
         </div>
-        <!--/.nav-collapse -->
-
+        <!-- /.container -->
     </div>
-    <!-- /.container -->
-</div>
-<div id="all">
-    <div id="content">
-        <div class="container">
+    <div id="all">
+      <div id="content">
+          <div class="container">
 
             <div class="col-md-12">
                 <ul class="breadcrumb">
@@ -441,40 +441,45 @@ _________________________________________________________ -->
                     </div>
                 </div>
                 <div class="panel panel-default sidebar-menu" data-animate="fadeInUpBig">
-                    <div class="">
-                        <div class="box slideshow">
-                            <h3>Get Inspired</h3>
-                            <p class="lead">Get the inspiration from our world class designers</p>
-                            <div id="get-inspired" class="owl-carousel owl-theme">
-                                <div class="item">
-                                    <a href="#">
-                                        <img src="{{ asset('frontend/img/img/getinspired1.jpg') }}" alt="Get inspired" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="#">
-                                        <img src="{{ asset('frontend/img/img/getinspired2.jpg') }}" alt="Get inspired" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="#">
-                                        <img src="{{ asset('frontend/img/img/getinspired3.jpg') }}" alt="Get inspired" class="img-responsive">
-                                    </a>
+                        <div class="">
+                            <div class="box slideshow">
+                                <h3>Get Inspired</h3>
+                                <p class="lead">Get the inspiration from our world class designers</p>
+                                <div id="get-inspired" class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <a href="#">
+                                            <img src="{{ asset('frontend/img/img/getinspired1.jpg') }}" alt="Get inspired" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#">
+                                            <img src="{{ asset('frontend/img/img/getinspired2.jpg') }}" alt="Get inspired" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#">
+                                            <img src="{{ asset('frontend/img/img/getinspired3.jpg') }}" alt="Get inspired" class="img-responsive">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 <!-- *** MENUS AND FILTERS END *** -->
 
+                {#<div class="banner">#}
+                    {#<a href="#">#}
+                        {#<img src="{{ asset('frontend/img/img/banner.jpg') }}" alt="sales 2014" class="img-responsive">#}
+                    {#</a>#}
+                {#</div>#}
             </div>
 
             <div class="col-md-9">
 
                 <div class="row" id="productMain">
                     <div class="col-sm-6">
-                        <div id="mainImage">
-                            <img src="{{ asset('frontend/img/feto/ch4.jpg') }}" alt="" class="img-responsive">
+                        <div id="_mainImage">
+                            <img src="{{ asset('frontend/img/img/detailbig1.jpg') }}" alt="" class="img-responsive">
                         </div>
 
                         <div class="ribbon sale">
@@ -484,8 +489,8 @@ _________________________________________________________ -->
                         <!-- /.ribbon -->
 
                         {#<div class="ribbon new">#}
-                        {#<div class="theribbon">NEW</div>#}
-                        {#<div class="ribbon-background"></div>#}
+                            {#<div class="theribbon">NEW</div>#}
+                            {#<div class="ribbon-background"></div>#}
                         {#</div>#}
                         <!-- /.ribbon -->
 
@@ -498,26 +503,27 @@ _________________________________________________________ -->
                             <p class="price">40 000 FCFA</p>
 
                             <p class="text-center buttons">
-                                <a href="{{ path('offre_panier') }}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Ajouter à ma commande</a>
+                                <a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Ajouter à ma commande</a>
                                 <a href="basket.html" class="btn btn-default"><i class="fa fa-heart"></i> Ajouter aux favories</a>
                             </p>
+
 
                         </div>
 
                         <div class="row" id="thumbs">
                             <div class="col-xs-4">
-                                <a href="{{ asset('frontend/img/feto/dedantur.jpg') }}" class="thumb">
-                                    <img src="{{ asset('frontend/img/feto/dedantur.jpg') }}" alt="" class="img-responsive">
+                                <a href="{{ asset('frontend/img/img/detailbig1.jpg') }}" class="thumb">
+                                    <img src="{{ asset('frontend/img/img/basketsquare.jpg') }}" alt="" class="img-responsive">
                                 </a>
                             </div>
                             <div class="col-xs-4">
-                                <a href="{{ asset('frontend/img/feto/ch4.jpg') }}" class="thumb">
-                                    <img src="{{ asset('frontend/img/feto/ch4.jpg') }}" alt="" class="img-responsive">
+                                <a href="{{ asset('frontend/img/img/detailbig2.jpg') }}" class="thumb">
+                                    <img src="{{ asset('frontend/img/img/detailsquare2.jpg') }}" alt="" class="img-responsive">
                                 </a>
                             </div>
                             <div class="col-xs-4">
-                                <a href="{{ asset('frontend/img/feto/feto2.jpg') }}" class="thumb">
-                                    <img src="{{ asset('frontend/img/feto/feto2.jpg') }}" alt="" class="img-responsive">
+                                <a href="{{ asset('frontend/img/img/detailbig3.jpg') }}" class="thumb">
+                                    <img src="{{ asset('frontend/img/img/detailsquare3.jpg') }}" alt="" class="img-responsive">
                                 </a>
                             </div>
                         </div>
@@ -563,7 +569,7 @@ _________________________________________________________ -->
                 </div>
 
                 {#<div class="row same-height-row">#}
-                {##}
+                    {##}
                 {#</div>#}
                 <div class="">
                     <div class="box same-height">
@@ -789,131 +795,131 @@ _________________________________________________________ -->
             </div>
             <!-- /.col-md-9 -->
         </div>
-        <div id="footer" data-animate="fadeInUp">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <h4>Menu</h4>
+          <div id="footer" data-animate="fadeInUp">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-3 col-sm-6">
+                          <h4>Menu</h4>
 
-                        <ul>
-                            <li><a href="text.html">Acceil</a>
-                            </li>
-                            <li><a href="text.html">Nos résidences</a>
-                            </li>
-                            <li><a href="faq.html"></a>
-                            </li>
-                            <li><a href="contact.html">Contactez-nous</a>
-                            </li>
-                        </ul>
+                          <ul>
+                              <li><a href="text.html">Acceil</a>
+                              </li>
+                              <li><a href="text.html">Nos résidences</a>
+                              </li>
+                              <li><a href="faq.html"></a>
+                              </li>
+                              <li><a href="contact.html">Contactez-nous</a>
+                              </li>
+                          </ul>
 
-                        <hr>
+                          <hr>
 
-                        <h4>Gestion membre</h4>
+                          <h4>Gestion membre</h4>
 
-                        <ul>
-                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Se connecter</a>
-                            </li>
-                            <li><a href="register.html">S'enregistrer</a>
-                            </li>
-                        </ul>
+                          <ul>
+                              <li><a href="#" data-toggle="modal" data-target="#login-modal">Se connecter</a>
+                              </li>
+                              <li><a href="register.html">S'enregistrer</a>
+                              </li>
+                          </ul>
 
-                        <hr class="hidden-md hidden-lg hidden-sm">
+                          <hr class="hidden-md hidden-lg hidden-sm">
 
-                    </div>
-                    <!-- /.col-md-3 -->
+                      </div>
+                      <!-- /.col-md-3 -->
 
-                    <div class="col-md-3 col-sm-6">
+                      <div class="col-md-3 col-sm-6">
 
-                        <h4>Top catégories</h4>
+                          <h4>Top catégories</h4>
 
-                        <h5>Chambres</h5>
+                          <h5>Chambres</h5>
 
-                        <ul>
-                            <li><a href="category.html">Standard</a>
-                            </li>
-                            <li><a href="category.html">De luxe</a>
-                            </li>
-                        </ul>
+                          <ul>
+                              <li><a href="category.html">Standard</a>
+                              </li>
+                              <li><a href="category.html">De luxe</a>
+                              </li>
+                          </ul>
 
-                        <h5>Suites</h5>
-                        <ul>
-                            <li><a href="category.html">Simple</a>
-                            </li>
-                            <li><a href="category.html">Junior</a>
-                            </li>
-                        </ul>
+                          <h5>Suites</h5>
+                          <ul>
+                              <li><a href="category.html">Simple</a>
+                              </li>
+                              <li><a href="category.html">Junior</a>
+                              </li>
+                          </ul>
 
-                        <hr class="hidden-md hidden-lg">
+                          <hr class="hidden-md hidden-lg">
 
-                    </div>
-                    <!-- /.col-md-3 -->
+                      </div>
+                      <!-- /.col-md-3 -->
 
-                    <div class="col-md-3 col-sm-6">
+                      <div class="col-md-3 col-sm-6">
 
-                        <h4>Nous localiser</h4>
+                          <h4>Nous localiser</h4>
 
-                        <p><strong>Le Feto 2</strong>
-                            <br>Sicap Foire
-                            <br> Dakar-Sénégal
-                            <br>
-                            <strong>Siége social</strong>
-                        </p>
+                          <p><strong>Le Feto 2</strong>
+                              <br>Sicap Foire
+                              <br> Dakar-Sénégal
+                              <br>
+                              <strong>Siége social</strong>
+                          </p>
 
-                        <a href="contact.html">Aller à la page de contact</a>
+                          <a href="contact.html">Aller à la page de contact</a>
 
-                        <hr class="hidden-md hidden-lg">
+                          <hr class="hidden-md hidden-lg">
 
-                    </div>
-                    <!-- /.col-md-3 -->
-                    <div class="col-md-3 col-sm-6">
+                      </div>
+                      <!-- /.col-md-3 -->
+                      <div class="col-md-3 col-sm-6">
 
-                        <h4>recevoir les nouveautés</h4>
+                          <h4>recevoir les nouveautés</h4>
 
-                        <p class="text-muted">Veillez indiquer ci dessous votre adresse email pour recevoir les nouvelles offres</p>
+                          <p class="text-muted">Veillez indiquer ci dessous votre adresse email pour recevoir les nouvelles offres</p>
 
-                        <form>
-                            <div class="input-group">
+                          <form>
+                              <div class="input-group">
 
-                                <input type="text" class="form-control">
+                                  <input type="text" class="form-control">
 
-                                <span class="input-group-btn">
+                                  <span class="input-group-btn">
 
 			    <button class="btn btn-default" type="button">S'inscrire</button>
 
 			</span>
 
-                            </div>
-                            <!-- /input-group -->
-                        </form>
+                              </div>
+                              <!-- /input-group -->
+                          </form>
 
-                        <hr>
+                          <hr>
 
-                        <h4>Stay in touch</h4>
+                          <h4>Stay in touch</h4>
 
-                        <p class="social">
-                            <a href="#" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
-                        </p>
+                          <p class="social">
+                              <a href="#" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
+                              <a href="#" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
+                              <a href="#" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>
+                              <a href="#" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>
+                              <a href="#" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
+                          </p>
 
 
-                    </div>
-                    <!-- /.col-md-3 -->
+                      </div>
+                      <!-- /.col-md-3 -->
 
-                </div>
-                <!-- /.row -->
+                  </div>
+                  <!-- /.row -->
 
-            </div>
-            <!-- /.container -->
-        </div>
+              </div>
+              <!-- /.container -->
+          </div>
     </div>
-</div>
-<footer class="main-footer">
-    <strong>Copyright &copy; 2017 <a href="http://sn.albasoft.fr">Albasoft it</a>.</strong>
-</footer>
-{% block javascripts %}{% endblock %}
+    </div>
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2017 <a href="http://sn.albasoft.fr">Albasoft it</a>.</strong>
+    </footer>
+    {% block javascripts %}{% endblock %}
 </body>
 <script src="{{ asset('frontend/js/jquery-1.11.2.min.js') }}"></script>      		<!-- jQuery -->
 <script src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>					<!-- bootstrap js -->

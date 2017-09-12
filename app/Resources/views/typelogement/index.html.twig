@@ -14,19 +14,19 @@
             </tr>
         </thead>
         <tbody>
-        {% for typeLogement in typeLogements %}
+        {% for typelogement in typelogements %}
             <tr>
-                <td><a href="{{ path('typelogement_show', { 'id': typeLogement.id }) }}">{{ typeLogement.id }}</a></td>
-                <td>{{ typeLogement.designationLogement }}</td>
-                <td>{{ typeLogement.prixLogement }}</td>
-                <td>{{ typeLogement.nombreOffresType }}</td>
+                <td><a href="{{ path('typelogement_show', { 'id': typelogement.id }) }}">{{ typelogement.id }}</a></td>
+                <td>{{ typelogement.designationLogement }}</td>
+                <td>{{ typelogement.prixLogement }}</td>
+                <td>{{ typelogement.nombreOffresType }}</td>
                 <td>
                     <ul>
                         <li>
-                            <a href="{{ path('typelogement_show', { 'id': typeLogement.id }) }}">show</a>
+                            <a href="{{ path('typelogement_show', { 'id': typelogement.id }) }}">show</a>
                         </li>
                         <li>
-                            <a href="{{ path('typelogement_edit', { 'id': typeLogement.id }) }}">edit</a>
+                            <a href="{{ path('typelogement_edit', { 'id': typelogement.id }) }}">edit</a>
                         </li>
                     </ul>
                 </td>
@@ -37,7 +37,7 @@
 
     <ul>
         <li>
-            <a href="{{ path('typelogement_new') }}">Create a new typeLogement</a>
+            <a href="{{ path('typelogement_new') }}">Create a new typelogement</a>
         </li>
     </ul>
 {% endblock %}

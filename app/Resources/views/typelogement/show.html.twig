@@ -7,19 +7,19 @@
         <tbody>
             <tr>
                 <th>Id</th>
-                <td>{{ typeLogement.id }}</td>
+                <td>{{ typelogement.id }}</td>
             </tr>
             <tr>
                 <th>Designationlogement</th>
-                <td>{{ typeLogement.designationLogement }}</td>
+                <td>{{ typelogement.designationLogement }}</td>
             </tr>
             <tr>
                 <th>Prixlogement</th>
-                <td>{{ typeLogement.prixLogement }}</td>
+                <td>{{ typelogement.prixLogement }}</td>
             </tr>
             <tr>
                 <th>Nombreoffrestype</th>
-                <td>{{ typeLogement.nombreOffresType }}</td>
+                <td>{{ typelogement.nombreOffresType }}</td>
             </tr>
         </tbody>
     </table>
@@ -29,7 +29,7 @@
             <a href="{{ path('typelogement_index') }}">Back to the list</a>
         </li>
         <li>
-            <a href="{{ path('typelogement_edit', { 'id': typeLogement.id }) }}">Edit</a>
+            <a href="{{ path('typelogement_edit', { 'id': typelogement.id }) }}">Edit</a>
         </li>
         <li>
             {{ form_start(delete_form) }}

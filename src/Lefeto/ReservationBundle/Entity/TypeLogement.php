@@ -51,6 +51,13 @@ class TypeLogement
      * @ORM\OneToMany(targetEntity="Offre", mappedBy="typelogement")
      */
     private $offres;
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->offres = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
     /**
      * Get id
@@ -156,13 +163,6 @@ class TypeLogement
     public function getResidence()
     {
         return $this->residence;
-    }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->offres = new \Doctrine\Common\Collections\ArrayCollection();
     }
 
     /**

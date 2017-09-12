@@ -1,9 +1,9 @@
-reservation_offre:
-    resource: "@ReservationBundle/Controller/OffreController.php"
+reservation_typelogement:
+    resource: "@ReservationBundle/Controller/TypelogementController.php"
     type:     annotation
 
-reservation_type_logement:
-    resource: "@ReservationBundle/Controller/TypeLogementController.php"
+reservation_offre:
+    resource: "@ReservationBundle/Controller/OffreController.php"
     type:     annotation
 
 reservation_residence:
